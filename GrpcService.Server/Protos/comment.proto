@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService.Server";
+
+package weather;
+
+// The greeting service definition.
+service CommentService {
+  // Sends a greeting
+  rpc GetCommentsByPost (GetCommentsByPostRequest) returns (GetCommentsByPostResponse);
+}
+
+message GetCommentsByPostRequest {
+  int32 postId = 1;
+}
+
+message GetCommentsByPostResponse {
+  repeated Comment comments = 1;
+}
+
+message Comment {
+  string name = 1;
+  string body = 2;
+}

@@ -1,0 +1,2 @@
+obj/Debug/net6.0/Protos/Comment.cs \
+obj/Debug/net6.0/Protos/CommentGrpc.cs: Protos/comment.proto
